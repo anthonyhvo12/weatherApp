@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="weather_style.css">
+    <script src="weather_app.js"></script>
+</head>
+<body>
+    <h1>Local Weather: <span id="location">17013,us</span></h1>
+    <img src="http://openweathermap.org/img/wn/13d@2x.png">
+
+    <div id="mainDiv">
+        <h2>Current Conditions:</h1>
+
+        <ul>
+            <li> 
+                <span class="feature">Outlook: </span>
+                <span class="description" id="curOutlook">Clear, snowing</span> 
+            </li>
+            <li> 
+                <span class="feature">Temperature: </span>
+                <span class="description" id="curTemp">27 Farenheit</span> 
+            </li>
+            <li> 
+                <span class="feature">Wind: </span>
+                <span class="description" id="curWind">18.2 mph</span> 
+            </li>
+        </ul>
+
+        <h2>24-hour Forecasts:</h1>
+
+        <div id="fcWrapper">
+            <div>
+                <div class="fcData" id="fc0">
+                    <img src="http://openweathermap.org/img/wn/13d@2x.png">
+                    <span class="fcCaption">12 AM</span>
+                    <span class="fcCaption description">20°F</span>
+                </div>
+                <div class="fcData" id="fc1">
+                    <img src="http://openweathermap.org/img/wn/13d@2x.png">
+                    <span class="fcCaption">3 AM</span>
+                    <span class="fcCaption description">20°F</span>
+                </div>
+                <div class="fcData" id="fc2">
+                    <img src="http://openweathermap.org/img/wn/13d@2x.png">
+                    <span class="fcCaption">6 AM</span>
+                    <span class="fcCaption description">20°F</span>
+                </div>
+                <div class="fcData" id="fc3">
+                    <img src="http://openweathermap.org/img/wn/13d@2x.png">
+                    <span class="fcCaption">9 AM</span>
+                    <span class="fcCaption description">20°F</span>
+                </div>
+                <div class="fcData" id="fc4">
+                    <img src="http://openweathermap.org/img/wn/13d@2x.png">
+                    <span class="fcCaption">12 PM</span>
+                    <span class="fcCaption description">20°F</span>
+                </div>
+                <div class="fcData" id="fc5">
+                    <img src="http://openweathermap.org/img/wn/13d@2x.png">
+                    <span class="fcCaption">3 PM</span>
+                    <span class="fcCaption description">20°F</span>
+                </div>
+                <div class="fcData" id="fc6">
+                    <img src="http://openweathermap.org/img/wn/13d@2x.png">
+                    <span class="fcCaption">6 PM</span>
+                    <span class="fcCaption description">20°F</span>
+                </div>
+                <div class="fcData" id="fc7">
+                    <img src="http://openweathermap.org/img/wn/13d@2x.png">
+                    <span class="fcCaption">9 PM</span>
+                    <span class="fcCaption description">20°F</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="updateWrapper"> 
+            <input type="radio" id="metric" name="units">
+            <label for="metric">Metric</label>
+            <input type="radio" id="imperial" name="units" checked=true>
+            <label for="imperial">Imperial</label>
+        </div>
+        <div class="updateWrapper">
+            <button onclick="updateWeather()">Update Data</button>
+        </div>
+    </div>
+
+    <p id="citation">Weather data from <span id="openWeatherLink">OpenWeather.</span></p>
+</body>
+</html>

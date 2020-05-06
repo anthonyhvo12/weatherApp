@@ -1,0 +1,48 @@
+h2 {
+    font-size: 24px;
+    font-weight: normal;
+    text-decoration: underline;
+    margin-left: 10px;
+}
+.feature {
+    font-style: italic;
+}
+.description {
+    font-weight: bold;
+    color: rgb(255, 255, 56);
+}
+.fcData {
+    display: inline-block;
+    text-align: center;
+}
+.fcCaption {
+    display: block;
+}
+.updateWrapper {
+    margin-top: 20px;
+    display: flex; 
+    justify-content: center; 
+}
+#location {
+    color: rgb(0, 11, 249);
+}
+#mainDiv {
+    width: 90vw;
+    background-color: rgb(108, 108, 108);
+    border-style: solid double;
+    border-radius: 10px;
+    border-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+#fcWrapper {
+    text-align: center;
+}
+#citation {
+    font-size: 12px;
+}
+#openWeatherLink {
+    color: rgb(0, 11, 249);
+    text-decoration: underline;
+}
